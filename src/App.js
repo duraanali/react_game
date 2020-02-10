@@ -12,10 +12,10 @@ const App = () => {
     <Router className="App">
       <ul>
         <li>
-          <Link to="/login">Login</Link>
+          <Link exact to="/login">Login</Link>
         </li>
         <li>
-          <Link to="/register">Register</Link>
+          <Link exact to="/register">Register</Link>
         </li>
       </ul>
       <Route path='/register' component={RegisterForm} />
