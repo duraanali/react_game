@@ -10,6 +10,7 @@ import MainGame from './game/game'
 const App = () => {
   return (
     <Router className="App">
+      <h1>Login</h1>
       <Route path='/register' component={RegisterForm} />
       <Route path='/login' component={LoginForm} />
       <PrivateRoute path='/game' component={MainGame} />
