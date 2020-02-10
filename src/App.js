@@ -12,14 +12,16 @@ const App = () => {
     <Router className="App">
       <ul>
         <li>
-          <Link exact to="/login">Login</Link>
+          <Link to="/login">Login</Link>
         </li>
         <li>
-          <Link exact to="/register">Register</Link>
+          <Link to="/register">Register</Link>
         </li>
       </ul>
-      <Route path='/register' component={RegisterForm} />
-      <Route path='/login' component={LoginForm} />
+
+      <Route exact path='/register' component={RegisterForm} />
+      <Route exact path='/' component={LoginForm} />
+      <Route exact path='/login' component={LoginForm} />
       <PrivateRoute path='/game' component={MainGame} />
     </Router>
   );
